@@ -1,0 +1,96 @@
+---
+import Socials from "./Socials.astro";
+---
+
+<footer>
+    <div class="md:px-12 bg-footer-gradient">
+        <!-- blue card -->
+        <div class="bg-[#004590] container mx-auto rounded-md py-6 px-6">
+            <!-- flex container -->
+            <div
+                class="flex text-white text-sm divide-x-[1px] divide-white/20 justify-between border-y border-dashed border-white/60 pt-8 pb-12"
+            >
+                <!-- corporate address -->
+                <div class="px-8">
+                    <h4 class="text-[#83beff] font-medium text-lg capitalize">
+                        Corporate address
+                    </h4>
+                    <div class="w-10 h-[3px] mt-1 bg-[#ffcb05]"></div>
+                    <p class="my-3">Homeocare International Pvt. Ltd.</p>
+                    <div class="flex items-center gap-4">
+                        <div>Icon</div>
+                        <p>
+                            S.P. Road, Begumpet
+                            <br />
+                            Hyderabad - 500003,
+                            <br />
+                            Telangana, INDIA.
+                        </p>
+                    </div>
+                </div>
+                <!-- contact us -->
+                <div class="px-8">
+                    <h4 class="text-[#83beff] font-medium text-lg capitalize">
+                        Contact Us
+                    </h4>
+                    <div class="w-10 h-[3px] mt-1 bg-[#ffcb05]"></div>
+                    <p class="mt-3">
+                        <span class="text-[#83beff] capitalize">toll free:</span
+                        >
+                        <a href="tel:1800-102-2202">1800 102 2202</a>
+                    </p>
+                    <p>
+                        <span class="text-[#83beff] capitalize">email:</span>
+                        <a href="mailto:online@homeocare.in"
+                            >online@homeocare.in</a
+                        >
+                    </p>
+                    <p class="mt-3 my-2 text-xs">connect with us</p>
+                    <Socials />
+                </div>
+                <!-- Branches -->
+                <div class="px-8">
+                    <h4 class="text-[#83beff] font-medium text-lg capitalize">
+                        Branches
+                    </h4>
+                    <div class="w-10 h-[3px] mt-1 bg-[#ffcb05]"></div>
+                    <ul class="mt-3 marker:text-[#1466be] list-disc">
+                        <li>Telangana</li>
+                        <li>Andhra Pradesh</li>
+                        <li>Karnataka</li>
+                        <li>Tamilnadu</li>
+                        <li>Puducherry</li>
+                    </ul>
+                </div>
+                <!-- Quick links -->
+                <div class="px-8">
+                    <h4 class="text-[#83beff] font-medium text-lg capitalize">
+                        Quick Links
+                    </h4>
+                    <div class="w-10 h-[3px] mt-1 bg-[#ffcb05]"></div>
+                    <div class="flex gap-8">
+                        <ul class="mt-3 marker:text-[#1466be] list-disc">
+                            <li>Happy Patients</li>
+                            <li>Feedback</li>
+                            <li>Carrers</li>
+                            <li>FAQ's</li>
+                            <li>Quality Policy</li>
+                        </ul>
+                        <ul class="mt-3 marker:text-[#1466be] list-disc">
+                            <li>Photo Gallery</li>
+                            <li>Videos</li>
+                            <li>Events</li>
+                            <li>Terms Of Service</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center pt-4 pb-3 text-white text-sm">
+            &copy; 2019 Homeocare International. All rights reserved.
+        </p>
+    </div>
+    <!-- end border -->
+    <div class="h-2 bg-[#00a7b8]"></div>
+</footer>

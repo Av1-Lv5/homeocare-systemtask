@@ -1,0 +1,47 @@
+---
+import CelebAvatar from "./CelebAvatar.astro";
+import LeftArrow from "./LeftArrow.astro";
+import RightArrow from "./RightArrow.astro";
+---
+
+<section class="container mx-auto md:px-12 my-12">
+    <h3 class="text-[#282828] text-3xl capitalize text-center mb-8 font-medium">
+        Our celebrities
+    </h3>
+    <div class="flex items-center overflow-hidden justify-between">
+        <div class="mb-8">
+            <LeftArrow />
+        </div>
+        <div class="flex gap-8 items-center justify-center">
+            <CelebAvatar
+                image="/assets/celebs/puneeth-rajkumar.png"
+                name="Puneeth Rajkumar"
+            />
+            <CelebAvatar
+                image="/assets/celebs/jagapathi-babu.png"
+                name="Jagapathi babu"
+            />
+            <CelebAvatar image="/assets/celebs/sneha.png" name="Sneha" />
+            <CelebAvatar
+                image="/assets/celebs/deeksha-seth.png"
+                name="Deeksha Seth"
+            />
+            <CelebAvatar
+                image="/assets/celebs/sudheer-babu.png"
+                name="Sudheer Babu"
+            />
+            <CelebAvatar
+                image="/assets/celebs/harshika.png"
+                name="Harshika Poonacha"
+            />
+        </div>
+        <div class="mb-8">
+            <RightArrow />
+        </div>
+    </div>
+    <div
+        class="mx-auto uppercase border-2 mb-6 w-fit mt-12 border-[#80e4ee] px-6 py-2"
+    >
+        ***Disclaimer: Results may vary from person to person
+    </div>
+</section>

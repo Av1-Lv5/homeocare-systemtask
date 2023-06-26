@@ -1,0 +1,60 @@
+---
+import TestimonialCard from "./TestimonialCard.astro";
+import LeftArrow from "./LeftArrow.astro";
+import RightArrow from "./RightArrow.astro";
+---
+
+<section>
+    <div class="my-12 bg-[#f5f9fc] py-8 container mx-auto md:px-12">
+        <h3
+            class="text-[#282828] text-3xl capitalize text-center mb-12 font-medium"
+        >
+            Testimonials
+        </h3>
+        <!-- testimonials flex container -->
+        <div class="flex gap-8 justify-between items-center">
+            <LeftArrow />
+            <div class="flex gap-8 mb-6 justify-center md:overflow-hidden">
+                <TestimonialCard
+                    name="Lakshmi"
+                    image="/assets/testimonials/1.png"
+                    bio="ID.NO: AKLA50, Arthritis"
+                >
+                    I'm suffered with Rheumatoid Arthritis and visited Homeocare
+                    International in Oct 2013 with severe Joint pains &
+                    Swelling. I had met the Homeopathy consultants and they give
+                    me...
+                </TestimonialCard>
+                <TestimonialCard
+                    name="M.V. Subbarayudu"
+                    image="/assets/testimonials/2.png"
+                    bio="ID.NO: DSN-BD64, Spondylosis"
+                >
+                    I felt very happy when I was controlled from spondylosis. My
+                    grateful thanks to the doctors of Homeocare International
+                    for curing my spondylosis disease...
+                </TestimonialCard>
+            </div>
+            <RightArrow />
+        </div>
+        <!-- carousel switcher -->
+        <div id="carouselSwitches" class="flex mb-12 gap-3 justify-center">
+            <div
+                class="switch border-2 hover:cursor-pointer border-[#1a5fa8] rounded-full w-2.5 aspect-square"
+            >
+            </div>
+            <div
+                class="switch border-2 hover:cursor-pointer border-neutral-700 rounded-full w-2.5 aspect-square"
+            >
+            </div>
+            <div
+                class="switch border-2 hover:cursor-pointer border-neutral-700 rounded-full w-2.5 aspect-square"
+            >
+            </div>
+            <div
+                class="switch border-2 hover:cursor-pointer border-neutral-700 rounded-full w-2.5 aspect-square"
+            >
+            </div>
+        </div>
+    </div>
+</section>

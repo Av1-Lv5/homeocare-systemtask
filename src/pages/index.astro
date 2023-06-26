@@ -1,15 +1,37 @@
 ---
+import Header from "../components/Header.astro";
+import AboutUs from "../components/AboutUs.astro";
+import Treatments from "../components/Treatments.astro";
+import ChairmanMsg from "../components/ChairmanMsg.astro";
+import WhyUs from "../components/WhyUs.astro";
+import Testimonials from "../components/Testimonilas.astro";
+import OurCelebs from "../components/OurCelebs.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Homeocare</title>
+    </head>
+    <body class="bg-white">
+        <Header />
+        <div class="w-full 2xl:container 2xl:px-8 mx-auto">
+            <img
+                src="/assets/hero-img.png"
+                alt=""
+                class="object-contain w-full"
+            />
+        </div>
+        <AboutUs />
+        <Treatments />
+        <ChairmanMsg />
+        <WhyUs />
+        <Testimonials />
+        <OurCelebs />
+        <Footer />
+    </body>
 </html>

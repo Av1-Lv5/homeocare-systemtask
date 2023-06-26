@@ -1,0 +1,44 @@
+---
+import TreatmentCard from "./TreatmentCard.astro";
+import LeftArrow from "./LeftArrow.astro";
+import RightArrow from "./RightArrow.astro";
+---
+
+<section class="py-12 bg-[#fafafa]">
+    <h3 class="text-[#282828] text-3xl capitalize text-center mb-8 font-medium">
+        Our Treatments
+    </h3>
+    <div
+        class="flex items-center justify-between gap-6 container mx-auto md:px-12"
+    >
+        <LeftArrow />
+        <div class="flex justify-center gap-6">
+            <TreatmentCard
+                title="thyroid"
+                href="#"
+                image="/assets/treatments/thyroid-icon.png"
+            >
+                Thyroid disorders can be easily controlled by Homeopathic
+                treatments which are right to opt because it will have no side
+                effects
+            </TreatmentCard>
+            <TreatmentCard
+                title="Kidney stones"
+                href="#"
+                image="/assets/treatments/kidney-icon.png"
+            >
+                Hard deposits of salts and other minerals formed within the
+                kidney or urinary tract are termed as Kidney stones...
+            </TreatmentCard>
+            <TreatmentCard
+                title="Arthritis"
+                href="#"
+                image="/assets/treatments/arthritis-icon.png"
+            >
+                Homeopathy treatment for arthritis uses natural remedies which
+                are safe, has no side effects, non toxic...
+            </TreatmentCard>
+        </div>
+        <RightArrow />
+    </div>
+</section>

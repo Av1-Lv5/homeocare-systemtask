@@ -1,0 +1,51 @@
+---
+import Button from "./Button.astro";
+---
+
+<div class="container flex mx-auto md:px-12 py-8 bg-white">
+    <div class="border-2 border-[#00cade] pt-6">
+        <div class="px-6">
+            <h3 class="capitalize mb-3 text-2xl font-medium">
+                Chairman's message
+            </h3>
+            <p class="mb-3">
+                My medical profession started with the passion to better the
+                lives of the people. Throughout my initial days of practice I've
+                felt immense satisfaction deep in my heart for choosing the
+                profession of a physician. Years passing by, the urge in me to
+                serve broader section of the society grew stronger and with this
+                zeal, I found this institution Homeocare International that
+                treats its patients with the utmost care and personalized
+                homeopathic treatments and shall have a great impact on their
+                health and lives.
+            </p>
+            <p>
+                As they say, Fortune favors the brave, I feel very fortunate to
+                say that I have a solid team of expert homeopathy doctors and
+                dedicated support staff that had my back and supported me and my
+                vision.
+            </p>
+        </div>
+        <div class="flex justify-between items-center pt-6">
+            <div class="pl-6"><Button href="#">Read more</Button></div>
+            <div class="px-20 py-6 border-t border-[#00cade] text-center">
+                <p class="capitalize text-lg text-[#0c55a4]">
+                    Dr. Srikant Morlawar
+                </p>
+                <p>Chairman and Managing Director</p>
+            </div>
+        </div>
+    </div>
+    <div class="shrink-0 flex items-center bg-chairman-gradient">
+        <div
+            class="relative left-16 w-56 h-56 rounded-full drop-shadow-[0px_4px_7px_rgba(31,52,93,0.08)]"
+        >
+            <img
+                src="/assets/chairman.png"
+                alt=""
+                class="w-56 h-56 bg-white object-cover rounded-full p-1"
+            />
+        </div>
+        <img src="/assets/college-logo-blurred.png" alt="" class="" />
+    </div>
+</div>

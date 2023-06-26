@@ -1,0 +1,13 @@
+---
+export type Props = {
+    href: string;
+};
+const { href }: Props = Astro.props;
+---
+
+<a
+    href={href}
+    class="rounded-full px-6 py-2 text-[#00cade] uppercase text-sm bg-white drop-shadow-[0px_2px_5px_rgba(43,73,132,0.15)]"
+>
+    <slot />
+</a>

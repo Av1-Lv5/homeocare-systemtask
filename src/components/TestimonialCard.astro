@@ -1,0 +1,25 @@
+---
+export interface Props {
+    image: string;
+    name: string;
+    bio: string;
+}
+const { image, name, bio } = Astro.props;
+---
+
+<div
+    class="flex gap-6 p-6 bg-white rounded-md max-w-[500px] drop-shadow-[0px_4px_7px_rgba(31,52,93,0.1)]"
+>
+    <img
+        src={image}
+        alt=""
+        class="w-[100px] h-[100px] rounded-full border border-neutral-700 object-contain"
+    />
+    <div class="flex gap-6 flex-col justify-between">
+        <slot />
+        <div>
+            <p class="text-lg text-[#1a5fa8] font-medium">{name}</p>
+            <p class="text-sm">{bio}</p>
+        </div>
+    </div>
+</div>
